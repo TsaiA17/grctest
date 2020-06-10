@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/bao6orr.css">
+<meta charset=”UTF-8”>
+
+<!-- THE TITLE WILL APPEAR IN THE BROWSER WINDOW OR TAB -->
+<title> Clotheslyne-Contact Us </title>
+<link rel="stylesheet" type="text/css" href="styles-contact.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+<div class = "icon">
+    <a href="#cart">
+    <img id="shop" src="images/Shopping_Bag.png" alt="SHOPPING CART" style="height:30px;width:25px;">
+    </a>
+</div>
+<div class = "header">
+    <img id="logo" src="images/logo@2x.png" alt="CLOTHESLYNE LOGO">
+</div> <!--end of top nav div-->
+
+
+<ul class="tab">
+    <li><a href="#" class="tablinks" class=active onclick="openCity(event, 'Home')">Home</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Shop')">Shop</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
+  </ul>
+  
+  <div id="Home" class="tabcontent" style=display:block>
+        <div class="imageback">
+            <div class = "spacing">
+            </div>
+            <div class="center">
+                <h1>Who Are We?</h1>
+                <h2>At Clotheslyne, we understand you want shopping to be easy and fun. We are here to redefine the thrifting experience, allowing you to sell, buy, and rent all in one platform.</h2>
+                
+            <nav> 
+                <ul>
+                    <li><a href="Foco_Brochure.pdf"> Learn More</a></li>
+                    <liL><a href="mailto:info@clotheslyne.com"> Email Us </a>  </liL>
+                </ul>
+            </nav>
+            </div>
+            <div class = "bottomspacing">
+            </div>
+        </div>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <div class="imageback">
+        <div class = "spacing">
+        </div>
+    
+        <div class="center">
+            <h1>About Us</h1>
+            <h2>The retail industry is the second largest pollutant in the world after the oil industry. Clotheslyne's circular fashion based platform uses preloved clothing, helping to reduce textile waste and carbon dioxide emissions. We are here to help customers clean out their closets and conveniently stay in style in a sustainable fashion and at a fraction of the retail price. 
+            </h2>
+            <nav> 
+                <ul>
+                    <li><a href="https://www.planetaid.org/blog/lessening-the-harmful-effects-of-the-clothing-industry" target="_blank">Learn More About Sustainable Fashion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class = "spacing">
+          </div>
+      </div>
+    </div>
+  
+  
+    <div id="Shop" class="tabcontent">
+        <h1>Shop</h1>
+        <div class="imgshoptext">
+        <img id="clothes" src="images/clothes.jpg" alt="RENTAL BOX" style= "width:600px;height:450px;"> 
+        <div class="shoptext">
+        <h3>Subscribe to our monthly rental boxes to get rent 5 handpicked items per month. Our stylists will provide suggestions that fit your size, style, and budget. We save you time and money but still give you the final say as to what goes inside your box</h3>
+        <nav>
+        <a href="#SubscribeNow"> Subscribe Now</a>
+        </nav>
+        </div>
+        </div>
+    </div>
+  
+     <div id="Contact" class="tabcontent">
+        <h1>Contact</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1207617419295!2d-122.40739248468194!3d37.78720957975722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580888d848c99%3A0x5da52092134527ce!2s29%20Grant%20Ave%2C%20San%20Francisco%2C%20CA%2094108!5e0!3m2!1sen!2sus!4v1591720559330!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <p>
+              
+           <i class="material-icons">place</i>
+           <a href="https://www.google.com/maps?ll=37.78721,-122.405204&z=16&t=m&hl=en&gl=US&mapclient=embed&q=29+Grant+Ave+San+Francisco,+CA+94108"> Clotheslyne Headquarters</a>
+          <br>
+           <i class="material-icons">call</i>
+          <a href="#tel:+5555555555">(530)786-6345</a>
+        </br>
+          <i class="material-icons">email</i>
+          <liL><a href="mailto:help@clotheslyne.com"> help@clotheslyne.com </a>  </liL>
+           </p>
+    </div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
